@@ -3,7 +3,7 @@
   <head>
     <title>Newapp</title>
     <%= csrf_meta_tags %>
-
+    <link href="https://fonts.googleapis.com/css?family=Righteous&amp;subset=latin-ext" rel="stylesheet"> 
     <link href="//fonts.googleapis.com/css?family=Lobster&amp;subset=cyrillic,latin-ext,vietnamese" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -19,11 +19,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="/" class="navbar-brand">NeWApp</a>
+      
+      <%= link_to "/" , class: "navbar-brand" do %>
+      <i class="fa fa-home"></i>
+      NeWApp
+      <% end %>
     </div>
     <div class="collapse navbar-collapse" id="main-nav-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/about">About</a></li>
+        
+        <li><%= link_to "About" ,"/about" %> </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
