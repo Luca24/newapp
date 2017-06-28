@@ -34,6 +34,8 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
 
 .navbar {
 	border: none;
+	font-family: 'Righteous', cursive;
+	font-weight: 800;
 	
 
 }
@@ -46,6 +48,15 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
 	padding-top: 50px;
 	padding-bottom: 100px;
 
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+.navbar-default .navbar-toggle {
+  border: 2px solid white;
+  &:hover, &:focus {
+    background-color: #0c0046;
+  }
 }
 
 /*/navbar icons white and hover white */
